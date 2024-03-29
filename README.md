@@ -2,7 +2,7 @@
 
 I did this project as part of a front-end technical task of an internship.
 
-You can visit the website here:
+You can visit the website here: https://goo-business-dashboard.vercel.app/
 
 
 ## Project Details
