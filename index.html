@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Business</title>
+    <link rel="stylesheet" href="static/css/ReferralDashboard/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="top-bar">
+            <nav>
+                <img src="static/img/ReferralDashboard/logo.png" alt="logo" />
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Courses</a>
+                    </li>
+                    <li>
+                        <a href="">Projects</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn try-btn">Try for free</button>
+
+            </nav>
+
+            <div class="rd-container">
+                <h1>Referral Dashboard</h1>
+                <div class="search-container">
+                    <img src="static/img/ReferralDashboard/magnifier.svg" alt="search" />
+                    <input type="search" placeholder="Search here..."  />
+                </div>
+                <button class="btn search-btn">Search</button>
+                <div class="profile-container">
+                    <img src="static/img/ReferralDashboard/Notifications.png" />
+                    <div class="sub-profile">
+                        <img src="static/img/ReferralDashboard/profile.png" />
+                        <div class="name-div">
+                            <p class="name">Name <img src="static/img/ReferralDashboard/down-arrow.png" alt="arrow"></p>
+                            <p class="admin">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calc-container">
+            <ul id="cardItems" class="card-items"></ul>
+            <div class="activity">
+                <div>
+                    <p class="activity-name">Service</p>
+                    <p class="activity-value">some service</p>
+                </div>
+                <div>
+                    <p class="activity-name">Your Referrals</p>
+                    <p class="activity-value">0 +    <span>0</span></p>
+                </div>
+                <div>
+                    <p class="activity-name">Active Referrals</p>
+                    <p class="activity-value">0 +    <span>0</span></p>
+                </div>
+                <div>
+                    <p class="activity-name">Total ref. Earnings</p>
+                    <p class="activity-value">$0.00</p>
+                </div>
+            </div>
+            <p class="refer-tag">Refer Friends And Earn More !!</p>
+            <hr />
+            <div class="refer-container">
+                <div>
+                    <p>Your Referral Link</p>
+                    <div>
+                        <input type="text" placeholder="https://gobusiness.com/?refferal=ABCXYZ" class="refer-1" />
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="copy" width="25"height="25"><path d="M144 416V112h-32v336h240v-32H160z" fill="#ffffff" class="color000000 svgShape"></path><path d="M325.3 64H160v336h240V139l-74.7-75zM368 176h-80V96h16v64h64v16z" fill="#ffffff" class="color000000 svgShape"></path></svg>
+                        Copy
+                    </button>
+                    </div>
+                </div>
+                <div>
+                    <p>Your Referral Code</p>
+                    <div>
+                        <input type="text" placeholder="ABCXYZ" class="refer-2" />
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="copy" width="25"height="25"><path d="M144 416V112h-32v336h240v-32H160z" fill="#ffffff" class="color000000 svgShape"></path><path d="M325.3 64H160v336h240V139l-74.7-75zM368 176h-80V96h16v64h64v16z" fill="#ffffff" class="color000000 svgShape"></path></svg>
+                        Copy
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-container" id="tableContainer">
+                <div class="table-size-container">
+                    <div>
+                        <p>Show</p>
+                        <div class="count-container">
+                            <p>10</p>
+                        </div>
+                        <p>Entries</p>
+                    </div>
+                    <div>
+                        <label for="search">Search: </label>
+                        <input id="search" type="text" /> 
+                    </div>
+                </div>
+                <div class="table-row Header">
+                    <p class="table-name table-row-p">Name</p>
+                    <p class="table-row-p">Service</p>
+                    <p class="table-row-p">Date</p>
+                    <p class="table-row-p">Profit</p>
+                </div>
+            </div>
+            <div class="pages-container">
+                <p>Showing 1 to 10 of 57 entries</p>
+                <div class="page-couting">
+                    <div>Previous</div>
+                    <div class="special-page">1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>Next</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <ul>
+                    <li class="first-li">COMPANY</li>
+                    <li>About</li>
+                    <li>Premium</li>
+                    <li>Blog</li>
+                    <li>Referral Program</li>
+                </ul>
+                <ul>
+                    <li class="first-li">HELP AND SUPPORT </li>
+                    <li>Contact Us</li>
+                    <li>Knowledge Center</li>
+                    <li>Premium Support</li>
+                </ul>
+                <ul>
+                    <li class="first-li">LEARNING</li>
+                    <li>Learn Hub</li>
+                    <li>Tutorials</li>
+                    <li>Communities</li>
+                </ul>
+                <ul>
+                    <li class="first-li">RESOURCES</li>
+                    <li>Third-Party Tools</li>
+                    <li>Illustrations</li>
+                    <li>Stock Photos</li>
+                </ul>
+                <ul>
+                    <li class="first-li">LEGAL</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>EULA</li>
+                </ul>
+            </div>
+            <div class="contact-container">
+                <img src="static/img/ReferralDashboard/logo.png" />
+                <p>© 2024 Go Business, Inc. All rights reserved.</p>
+                <div>
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #9ca3af;"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl" style="color: #9ca3af;"></i>
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #9ca3af;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/66952b3aa9.js" crossorigin="anonymous"></script>
+</body>
+</html>
